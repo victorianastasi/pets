@@ -1,0 +1,96 @@
+@import "./variables";
+
+.main-page {
+  height: calc(100vh - 60px);
+  position: relative;
+
+  .home {
+    height: 100%;
+    width: 100%;
+    background-image: url("/images/wave.svg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+  .home-cover {
+    height: 100%;
+    width: 100%;
+    background-image: url("/images/cover.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center bottom;
+    aspect-ratio: 3/2;
+
+    @media screen and (min-width: 576px) {
+      background-size: contain;
+    }
+  }
+
+  .home-btn {
+    position: absolute;
+    bottom: 45%;
+    right: 50%;
+    transform: translate(50%, 0);
+    display: flex;
+    border: 1px solid rgba(250, 250, 250, 0.25);
+    padding: 0.25rem;
+    border-radius: 2rem;
+    backdrop-filter: blur(40px);
+    text-decoration: none;
+    background-color: $dark;
+    color: $white;
+
+    @media screen and (min-width: 576px) {
+      bottom: 40%;
+      right: 8%;
+      transform: translate(0);
+    }
+
+    .home-btn__icon {
+      border-radius: 50%;
+      width: 56px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 1rem;
+      background-color: white;
+      color: $dark;
+    }
+
+    .home-btn__text {
+      margin: 0;
+      padding-right: 0.5rem;
+      font-size: 1.5rem;
+      line-height: 50px;
+    }
+  }
+
+  .home-text {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    @media screen and (max-width: 310px) {
+      top: 0;
+    }
+    h1 {
+      font-family: $comfortaa;
+      text-align: center;
+      color: rgb(40, 40, 40);
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+      font-size: 38px;
+      padding: 0 1rem;
+
+      @media screen and (min-width: 768px) {
+        width: 75%;
+        margin: 0 auto;
+      }
+      @media screen and (min-width: 992px) {
+        width: 50%;
+        font-size: 44px;
+      }
+    }
+  }
+}

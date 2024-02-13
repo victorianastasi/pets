@@ -1,0 +1,47 @@
+@import "../variables";
+
+.mp-container {
+  width: 100%;
+  justify-content: center;
+  padding: 1rem;
+  @media screen and (min-width: 768px) {
+    width: 750px;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+  }
+}
+.w-500 {
+  width: 100%;
+  @media screen and (min-width: 576px) {
+    width: 360px;
+  }
+}
+
+.btn {
+  font-family: $comfortaa;
+  font-size: 14px;
+}
+
+.btn-donate {
+  background-color: $blue-marine;
+  color: $white;
+  font-size: 16px;
+  &:hover,
+  &:active {
+    background-color: $blue-marine-darker;
+    color: $white;
+  }
+}
+
+.font-comfortaa {
+  font-family: $comfortaa;
+}
+
+.btn-donation-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: auto;
+  width: 177px;
+}

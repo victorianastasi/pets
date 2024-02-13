@@ -1,0 +1,37 @@
+@import "../../globals.scss";
+
+.footer {
+  padding: 0.5rem 0.25rem;
+  background-color: $dark;
+  color: $roselyn-light;
+  text-align: center;
+
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    a {
+      text-decoration: none;
+      color: $roselyn-light;
+      width: 28px;
+      height: 28px;
+      * {
+        font-size: 28px;
+      }
+
+      &:hover,
+      &:active {
+        color: $white;
+      }
+    }
+  }
+
+  small {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: $gray;
+    font-size: 12px;
+  }
+}

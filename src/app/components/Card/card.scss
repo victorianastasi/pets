@@ -1,0 +1,43 @@
+@import "../../globals.scss";
+
+.card {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  border: none !important;
+  box-shadow: none;
+  max-width: 300px;
+  background-color: transparent !important;
+
+  .card-link {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: $white;
+    border-radius: 0.375rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    transition: all ease 0.2s;
+
+    &:hover,
+    &:active {
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+      background-color: $white;
+      transform: translateY(-5px);
+    }
+
+    .card-link__text {
+      display: inline-block;
+      width: 100%;
+      padding: 0.75rem;
+      border-radius: 0 0.375rem 0.375rem 0;
+      text-align: left;
+      font-family: $comfortaa;
+      font-size: 16px;
+    }
+
+    .card-link__icon {
+      margin: 0.75rem;
+      font-size: 24px;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+@import "bootstrap/scss/bootstrap";
+@import "../../globals.scss";
+
+header {
+  color: $gray-800;
+  font-family: $comfortaa;
+
+  &.scrolled {
+    border-bottom: 2px solid #dee2e6;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    scroll-behavior: smooth;
+  }
+  .navbar-brand span {
+    font-size: 1rem;
+
+    @media screen and (min-width: 576px) {
+      font-size: 1.25rem;
+    }
+  }
+
+  .btn-toggler.scrolled {
+    color: $roselyn-lighter;
+    border-color: $roselyn-lighter;
+    border-width: 2px;
+  }
+  
+  @media (max-width: 991.98px) {
+    .offcanvas-lg.offcanvas-start {
+      width: 280px !important;
+    }
+  }
+
+  .offcanvas-body {
+    .nav-link {
+      border: 1px solid $roselyn-lighter;
+
+      @media screen and (max-width: 992px) {
+        padding: 0.5rem;
+        border: 1px solid $roselyn;
+      }
+    }
+
+    .nav-link,
+    .dropdown-item {
+      &.active,
+      &:active {
+        background-color: $light;
+        color: $gray-800;
+        @media screen and (max-width: 992px) {
+          background-color: $roselyn-lightest;
+          color: $dark;
+        }
+      }
+
+      &:hover {
+        background-color: $gray-light;
+        color: $dark;
+      }
+    }
+
+    .pets-dropdown-btn {
+      width: 100%;
+      text-align: left;
+
+      &:after {
+        margin-left: 8px;
+      }
+
+      &[aria-expanded="true"] {
+        &:after {
+          border-bottom: 0.3em solid;
+          border-top: 0;
+        }
+
+        &:not(.active):not(:hover) {
+          color: $roselyn;
+          &:after {
+            color: $roselyn;
+          }
+          @media screen and (min-width: 992px) {
+            color: $white;
+            &:after {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
