@@ -39,13 +39,31 @@
     border-radius: 2rem;
     backdrop-filter: blur(40px);
     text-decoration: none;
-    background-color: $dark;
-    color: $white;
+    color: $dark;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.15s ease-in-out;
 
     @media screen and (min-width: 576px) {
       bottom: 40%;
       right: 8%;
       transform: translate(0);
+    }
+
+    &:hover {
+      background-color: $dark;
+      color: $white;
+
+      .home-btn__icon {
+        background-color: $white;
+        color: $dark;
+      }
+    }
+
+    &:focus,
+    &:focus-visible {
+      outline: 2px solid $white;
+      outline-offset: 0;
     }
 
     .home-btn__icon {
@@ -56,8 +74,8 @@
       align-items: center;
       justify-content: center;
       margin-right: 1rem;
-      background-color: white;
-      color: $dark;
+      background-color: $dark;
+      color: $white;
     }
 
     .home-btn__text {

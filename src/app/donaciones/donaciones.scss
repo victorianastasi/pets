@@ -18,6 +18,14 @@
   }
 }
 
+.article-donation {
+  margin-top: 3rem;
+  @media screen and (max-width: 576px) {
+    padding-top: 56px;
+    margin-top: 0;
+  }
+}
+
 .btn {
   font-family: $comfortaa;
   font-size: 14px;
@@ -39,9 +47,10 @@
 }
 
 .btn-donation-nav {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: center;
   min-width: auto;
   width: 177px;
+  font-family: 'Lato', sans-serif !important;
 }

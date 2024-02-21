@@ -10,7 +10,7 @@ export default function Adopciones() {
       <h1>Adopciones</h1>
       <div className="d-flex gap-5 box-container">
         <div className="box-img">
-          <Image src={adoptionImage} alt="" width={256} height={170}></Image>
+          <Image src={adoptionImage} alt="" width={256} height={170} layout="responsive" objectFit="cover"></Image>
         </div>
         <div className="box-text">
           <p className="text-highlighted">Nuestras mascotas esperan ansiosas una segunda oportunidad. Cada uno tiene una historia única y está listo para llenar tu vida de amor incondicional.</p>

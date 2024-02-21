@@ -10,7 +10,7 @@ export default function Nosotros() {
       <h1>Nosotros</h1>
       <div className="d-flex gap-5 box-container">
         <div className="box-img">
-          <Image src={usImage} alt="" width={256} height={170}></Image>
+          <Image src={usImage} alt="" width={256} height={170} layout="responsive" objectFit="cover"></Image>
         </div>
         <div className="box-text">
           <p>Nos enorgullece ser un refugio comprometido con la protección y el bienestar de perros y gatos que han enfrentado situaciones difíciles en sus vidas.</p>

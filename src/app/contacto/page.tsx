@@ -14,7 +14,7 @@ export default function Contacto() {
       <h1>Contacto</h1>
       <div className="d-flex gap-xl-5 gap-4 box-container">
         <div className="box-img">
-          <Image src={contactImage} alt="" width={256} height={170}></Image>
+          <Image src={contactImage} alt="" width={256} height={170} layout="responsive" objectFit="cover"></Image>
         </div>
         <div className="box-text">
           <p className="text-open-sans mb-4 mb-lg-5">Nos podes contactar a través de los siguientes canales:</p>
@@ -35,7 +35,6 @@ export default function Contacto() {
                   height={24}
                 ></Image>
               }
-              /* color="#353635" */
               text="Instagram"
               url="#"
               classname="mb-4 mb-xl-5 mx-auto mx-xl-0"

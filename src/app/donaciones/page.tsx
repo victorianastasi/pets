@@ -47,12 +47,12 @@ export default function Donaciones() {
 
   return (
     <section className="container">
-      <div className="text-center pb-5">
+      <div className="text-center pb-4">
         <h1>Donaciones</h1>
         <p className="mb-1 fs-4 text-white fw-bold font-comfortaa">
           ¡Cada granito de ayuda hace una gran diferencia!
         </p>
-        <p className="fs-1">
+        <p className="fs-1 mb-5">
           {" "}
           <PiDogDuotone size={52} /> <PiCatDuotone size={52} />{" "}
         </p>
@@ -61,7 +61,7 @@ export default function Donaciones() {
           <a className="btn btn-dark btn-donation-nav" href="#insumos"><span>Insumos</span></a>
         </p>
       </div>
-      <article className="my-5" id="aportes">
+      <article className="mb-5 article-donation" id="aportes">
         <h2 className="fw-bold">Aportes económicos</h2>
 
         <p className="mb-1">
@@ -72,10 +72,12 @@ export default function Donaciones() {
         <p className="mb-1">
           Además, son fundamentales para adquirir suministros y alimentos.
         </p>
-        <div className="d-flex gap-4 gap-lg-5 flex-wrap flex-md-nowrap bg-white rounded shadow-lg mp-container mt-5">
-          <Image src={MPLogo} alt="" width={250} height={141}></Image>
+        <div className="d-flex gap-2 gap-lg-5 flex-wrap flex-md-nowrap bg-white rounded shadow-lg mp-container mt-5">
+          <div style={{ maxWidth: '250px', maxHeight: '141px' }}>
+            <Image src={MPLogo} alt="" width={250} height={141} layout="responsive" objectFit="cover"></Image>
+          </div>
           <div className="w-500 text-center">
-            <p className="d-flex gap-2 align-items-center justify-content-between flex-wrap flex-md-nowrap bg-light rounded p-2 w-500">
+            <p className="d-flex gap-2 align-items-center justify-content-between flex-wrap flex-column flex-md-row flex-md-nowrap bg-light rounded p-2 w-500">
               <span>
                 <span>ALIAS: </span>
                 <span className="fw-bold">{ALIAS_MP}</span>
@@ -100,7 +102,7 @@ export default function Donaciones() {
                 </button>
               </CopyToClipboard>
             </p>
-            <p className="d-flex gap-2 align-items-center justify-content-between flex-wrap flex-md-nowrap bg-light rounded p-2 w-500 mb-5">
+            <p className="d-flex gap-2 align-items-center justify-content-between flex-wrap flex-column flex-md-row flex-md-nowrap bg-light rounded p-2 w-500 mb-5">
               <span>
                 <span>CVU: </span>
                 <span className="fw-bold">{CVU_MP}</span>
@@ -142,16 +144,16 @@ export default function Donaciones() {
         </div>
         <ToastContainer />
       </article>
-      <article className="my-5 pb-5" id="insumos">
+      <article className="mb-5 article-donation pb-5" id="insumos">
         <h2 className="fw-bold">Insumos</h2>
         <div className="d-flex gap-4 gap-lg-5 flex-wrap flex-md-nowrap bg-white rounded shadow-lg mp-container mt-5 pb-5">
-          <Image src={Donation} alt="" width={250} height={174}></Image>
+          <div style={{ width: '250px', height: '174px' }}>
+            <Image src={Donation} alt="" width={250} height={174} layout="responsive" objectFit="cover"></Image>
+          </div>
           <div className="w-500 text-center">
-            <p className="d-flex gap-2 align-items-center flex-wrap flex-md-nowrap bg-light rounded p-2 w-500">
-              <span className="text-start">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Commodi fugiat deleniti et mollitia consectetur, nobis, dolorem
-                fugit, accusantium obcaecati impedit nemo aliquid?{" "}
+            <p className="bg-light rounded p-2 w-500">
+              <span>
+                <strong>¿Qué puedo donar?</strong>
               </span>
             </p>
             <p className="d-flex gap-2 align-items-center flex-wrap flex-md-nowrap bg-light rounded p-2 w-500">
