@@ -29,7 +29,7 @@ export default function Donaciones() {
       pauseOnHover: true,
       draggable: true,
       progress: undefined,
-      theme: "colored",
+      theme: "dark",
       transition: Bounce,
     });
   };
@@ -86,7 +86,7 @@ export default function Donaciones() {
                 <button
                   onClick={() => handleIsCopied("Alias", setIsCopiedAlias)}
                   className={`btn d-flex align-items-center ${
-                    isCopiedAlias ? "btn-success" : "btn-dark"
+                    isCopiedAlias ? "btn-outline-success" : "btn-dark"
                   }`}
                 >
                   {isCopiedAlias ? (
@@ -111,7 +111,7 @@ export default function Donaciones() {
                 <button
                   onClick={() => handleIsCopied("CVU", setIsCopiedCvu)}
                   className={`btn d-flex align-items-center ${
-                    isCopiedCvu ? "btn-success" : "btn-dark"
+                    isCopiedCvu ? "btn-outline-success" : "btn-dark"
                   }`}
                 >
                   {isCopiedCvu ? (
